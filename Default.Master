@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Electronic_Shopping_Website.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1607px;
+            height: 50px;
+        }
+        .auto-style2 {
+            height: 26px;
+        }
+        .auto-style3 {
+            width: 1100px;
+        }
+        .auto-style4 {
+            width: 362px;
+            height: 50px;
+        }
+        .auto-style5 {
+            width: 100px;
+            height: 50px;
+        }
+        .auto-style6 {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="margin:0 auto;" class="auto-style3">
+                <tr style="width:1100px; border-color:darkmagenta; background-color:transparent; background-image: url('/IMAGE/bg2.jpg');">
+                    <td ; align="center" class="auto-style5">
+                        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/IMAGE/E-SHOPPING IMAGES/WEB LOGO 2.png" Width="100px" /></td>
+                     <td ; align="center" class="auto-style1">
+                         <asp:Label ID="Label1" runat="server" Text="ELECTRONIC SHOPPING CENTER " Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" ForeColor="RoyalBlue" Font-Size="35px"></asp:Label>
+                         <br /><b>For Those Who Love Shopping Of Electronics...</b>
+                     </td>
+                     <td class="auto-style4">&nbsp;&nbsp;
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" style="text-align:left"
+                            ImageUrl="~/IMAGE/E-SHOPPING IMAGES/social logo/facebook.png" Width="51px" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" Height="50px" style="text-align:left"
+                            ImageUrl="~/IMAGE/E-SHOPPING IMAGES/social logo/twitter.png" Width="31px" />
+                        &nbsp;
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="50px" style="text-align:left"
+                            ImageUrl="~/IMAGE/E-SHOPPING IMAGES/social logo/add to cart.png" Width="28px" />
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#5F98F5"></asp:Label>
+                     </td>
+                    <td class="auto-style6">
+                        </td>
+                </tr>
+                 <tr style="width:100px;height:40px;background-image: url('/IMAGE/bg2.jpg')">
+                     <td colspan="3" style="border-spacing: 0px; empty-cells: hide; background-image: url('/IMAGE/bg2.jpg')">
+                          &nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:HyperLink ID="HyperLink1" runat="server" Text="Home" Font-Bold="True"></asp:HyperLink>
+                          &nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink2" runat="server" Text="Registration" Font-Bold="True" Font-Italic="False" NavigateUrl="~/Registration_Form.aspx"></asp:HyperLink>
+                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:HyperLink ID="HyperLink8" runat="server" Text="Categories" Font-Bold="True"></asp:HyperLink>
+                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink3" runat="server" Text="Today's Deals" Font-Bold="True"></asp:HyperLink>
+                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink4" runat="server" Text="Admin Login" Font-Bold="True" NavigateUrl="~/Login.aspx"></asp:HyperLink>
+                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink5" runat="server" Text="Customer Services" Font-Bold="True"></asp:HyperLink>
+                          &nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink6" runat="server" Text="Best Sellers" Font-Bold="True"></asp:HyperLink>
+                          &nbsp;
+                          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:HyperLink ID="HyperLink7" runat="server" Text="About Us" Font-Bold="True"></asp:HyperLink>
+                     </td>
+                </tr>
+                 <tr style=" width:1110px;height:330px;">
+                    <td colspan="3">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <asp:Timer ID="Timer1" runat="server" Interval="2000" OnTick="Timer1_Tick"></asp:Timer>
+                                <asp:Image ID="Image" runat="server" BackColor="White" BorderColor="Gray" BorderStyle="Double" Height="320px" Width="1150px" ImageAlign="Top" ImageUrl="~/IMAGE/bg2.jpg" />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </td>
+                </tr>
+                 <tr>
+                    <td colspan="3">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                             <p>
+                                 &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                 <tr style="width:1100px;height:25px;background-color:black;text-align:center;color:white">
+                    <td colspan="3" class="auto-style2">
+                        &copy; Online Electronic Shopping Pvt. | All rights reserved.
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>
